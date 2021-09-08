@@ -8,15 +8,17 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 
 export class ButtonComponent implements OnInit {
-  @Input() buttonText = '';
-
+  @Input() buttonText : string = '';
+  @Input() callbackFunctionParams : any = [];
+  @Input() callbackFunction!: (args: any) => void;
+  
   constructor() { }
 
   ngOnInit(): void {
   }
 
   onClick(){
-    console.log("hello");
+    this.callbackFunction(this.callbackFunctionParams);
   }
 
 }

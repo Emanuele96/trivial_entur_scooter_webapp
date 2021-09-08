@@ -1,9 +1,21 @@
-<div id = "container">
+<div class = "container">
     <h2>Filters</h2>
     <div id="row">
-        <app-button [buttonText] = "'Search!'"></app-button>
+        <div class="container">
+            <input #lat (keyup)="0" type="text" name="lat" placeholder="Latitude" value={{defaultLat}}>
+            <input #lon (keyup)="0" type="text" name="long" placeholder="Longitude" value={{defaultLong}}>
+            <app-button 
+            [buttonText] = "'Search!'"
+            [callbackFunction]= "updateLocation"
+            [callbackFunctionParams] = "[lat.value, lon.value, this.dataService]">
+        </app-button>
+        </div>
         <div id="slider-container">
-            <ngx-slider [(value)]="value" [options]="options"></ngx-slider>
+            <ngx-slider 
+            [(value)]="value"
+            [options]="options"
+            (userChangeEnd)="onValueChangeEnd($event)">
+            </ngx-slider>
             <h4>Range (m)</h4>
         </div>
     </div>
