@@ -1,5 +1,5 @@
 # Scouting: a scooter scouting app
-A project choosen by me as case problem for NoA Ignite job process. Only costrain was time, being not much over 3 hours.
+A project choosen by me as case problem in a job application process.
 Data from Entur freely available at https://developer.entur.org/pages-mobility-docs-mobility-v2
 
 ## Development server
