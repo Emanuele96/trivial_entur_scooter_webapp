@@ -2,6 +2,9 @@
 A project choosen by me as case problem in a job application process.
 Data from Entur freely available at https://developer.entur.org/pages-mobility-docs-mobility-v2
 
+Try the App here:
+https://emanuele96.github.io/trivial_entur_scooter_webapp/
+
 ## Development server
 
 Run `ng serve` OR 'npm start' for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
